@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vida Sana - Medicina Natural</title>
+  <style>
+    :root{
+      --green:#2e7d32;
+      --light:#e8f5e9;
+      --dark:#1b5e20;
+      --gray:#555;
+    }
+    *{box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
+    body{margin:0;color:#222;background:#fafafa;}
+    header{
+      background:linear-gradient(135deg,var(--green),var(--dark));
+      color:white;padding:40px 20px;text-align:center;
+    }
+    header h1{margin:0;font-size:40px;letter-spacing:1px;}
+    header p{max-width:900px;margin:15px auto 0;font-size:18px;line-height:1.6;}
+    nav{
+      background:#fff;border-bottom:1px solid #ddd;
+      position:sticky;top:0;z-index:10;
+    }
+    nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:12px 20px;justify-content:center;}
+    nav a{text-decoration:none;color:var(--green);font-weight:bold;}
+    section{padding:60px 20px;max-width:1100px;margin:auto;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+    .card{
+      background:white;border-radius:10px;padding:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+      text-align:center;
+    }
+    .card svg{width:80px;height:80px;margin-bottom:10px;}
+    .images{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+    .imgbox{
+      background:white;border-radius:12px;overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+    }
+    .imgbox .ph{
+      height:180px;background:linear-gradient(135deg,#c8e6c9,#a5d6a7);
+      display:flex;align-items:center;justify-content:center;color:#2e7d32;font-weight:bold;
+    }
+    .imgbox p{padding:15px;color:var(--gray);font-size:14px;}
+    .mv{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+    .mv div{background:var(--light);padding:25px;border-radius:12px;}
+    footer{
+      background:#111;color:#eee;padding:30px 20px;text-align:center;
+    }
+    .cta{
+      background:var(--light);border-radius:12px;padding:25px;text-align:center;
+    }
+    .btn{
+      display:inline-block;margin-top:15px;background:#25D366;color:white;
+      padding:14px 22px;border-radius:30px;text-decoration:none;font-weight:bold;
+    }
+    @media(max-width:700px){.mv{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VIDA SANA</h1>
+  <p>
+    Empresa dedicada a medicina homeopática para prevenir o corregir patologías,
+    con medicina 100% natural y alternativa.
+  </p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#mision">Misión & Visión</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<section id="servicios">
+  <h2>Medicina Natural</h2>
+  <div class="cards">
+    <div class="card">
+      <svg viewBox="0 0 64 64" fill="none" stroke="#2e7d32" stroke-width="3">
+        <path d="M32 2 C20 14, 10 22, 10 36 a22 22 0 0 0 44 0 C54 22,44 14,32 2z"/>
+      </svg>
+      <h3>Homeopatía</h3>
+      <p>Tratamientos alternativos enfocados en el equilibrio natural del cuerpo.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 64 64" fill="none" stroke="#2e7d32" stroke-width="3">
+        <path d="M12 40 C20 20,44 20,52 40"/>
+        <line x1="32" y1="10" x2="32" y2="54"/>
+      </svg>
+      <h3>Fitoterapia</h3>
+      <p>Uso de plantas medicinales para el bienestar integral.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 64 64" fill="none" stroke="#2e7d32" stroke-width="3">
+        <circle cx="32" cy="32" r="20"/>
+        <line x1="32" y1="12" x2="32" y2="52"/>
+        <line x1="12" y1="32" x2="52" y2="32"/>
+      </svg>
+      <h3>Prevención</h3>
+      <p>Enfoque preventivo para mejorar la calidad de vida.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Historias de Bienestar</h2>
+  <div class="images">
+    <div class="imgbox">
+      <div class="ph">Imagen demostrativa</div>
+      <p>Personas mayores que han mejorado su bienestar con medicina natural.</p>
+    </div>
+    <div class="imgbox">
+      <div class="ph">Imagen demostrativa</div>
+      <p>Acompañamiento respetuoso a personas con diferentes capacidades.</p>
+    </div>
+    <div class="imgbox">
+      <div class="ph">Imagen demostrativa</div>
+      <p>Tratamientos alternativos enfocados en el cuidado integral.</p>
+    </div>
+  </div>
+  <p style="font-size:13px;color:#666;margin-top:10px;">
+    *Las imágenes son ilustrativas. Puedes reemplazarlas por fotografías reales de tu empresa.
+  </p>
+</section>
+
+<section id="mision">
+  <h2>Misión y Visión</h2>
+  <div class="mv">
+    <div>
+      <h3>Misión</h3>
+      <p>
+        Brindar alternativas de medicina natural y homeopática que contribuyan
+        al bienestar físico, emocional y mental de las personas, respetando los
+        procesos naturales del cuerpo.
+      </p>
+    </div>
+    <div>
+      <h3>Visión</h3>
+      <p>
+        Ser una empresa referente en medicina alternativa, reconocida por su
+        compromiso con la salud integral, la ética y el uso responsable de
+        tratamientos 100% naturales.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="cta">
+    <h2>Contáctanos por WhatsApp</h2>
+    <p>Atención personalizada y asesoría en medicina natural.</p>
+    <a class="btn" href="https://wa.me/573227071627" target="_blank">
+      WhatsApp: 322 707 1627
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vida Sana - Medicina Natural y Alternativa</p>
+</footer>
+
+</body>
+</html>
